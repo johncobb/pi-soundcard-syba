@@ -1,19 +1,18 @@
-# Python Audio File (SYBA)
+# Raspberry Pi Audio File (SYBA)
 
 
-## Detect USB Soundcard Device
+Detect USB Soundcard Device
 Run following command an plugin in USB Sound Card device.
 ```console
 sudo tail -f /var/log/messages
 ```
 
-
-## Check proper loading of kernel module.
+Check proper loading of kernel module.
 ```console
 lsmod | grep snd_usb_audio
 ```
 
-## Display ALSA playback device
+Display ALSA playback device
 ALSA Card Id is "Pro or number 1. The ALSA Card has two devices:
 0 - Dirst Device
 1 - Second Device
@@ -36,5 +35,6 @@ speaker-test -Dhw:1,0 -c2 -twav
 
 ### References
 https://www.instructables.com/Use-USB-Sound-Card-in-Raspberry-Pi/
+
 http://alsa-project.org
 
